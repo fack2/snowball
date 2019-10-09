@@ -4,6 +4,6 @@ const getCategoryInfo = require('./getCategoryInfo')
 const { getPledges } = require('./getPledges')
 
 router.get('/api/dashboard', getCategoryInfo.get)
-router.get('/api/pledgescategories', getPledges)
+router.get('/api/pledges-categories/1', getPledges)
 
 module.exports = router

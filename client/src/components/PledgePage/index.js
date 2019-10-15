@@ -15,7 +15,6 @@ class PledgePage extends React.Component {
 
     axios.get(`/api/action-category/pledge/${pledge_id}`).then(Response => {
       const pledgeInfoPage = Response.data
-      console.log("Response", pledgeInfoPage[0]);
       this.setState({
         pledgeInfo: pledgeInfoPage[0],
         pledgeInstructions: pledgeInfoPage[1],
@@ -31,8 +30,7 @@ class PledgePage extends React.Component {
   render() {
     const { data } = this.props.location.state
     const { pledgeInfo, pledgeInstructions, pledgeProsCons, pledgeResources, pledgeReferences } = this.state
-    {/* should axios request to get pledge info by id */ }
-    {/* {console.log("this.props.location.data", data)} */ }
+
     return (
       <>
         {
@@ -44,8 +42,6 @@ class PledgePage extends React.Component {
               <p>{pledgeInfo[0].img}</p>
               <p>{pledgeInfo[0].number_of_enrollement}</p>
               <p>{pledgeInfo[0].further_info}</p>
-              {console.log("whhhat", pledgeInstructions)
-              }
               {pledgeInstructions.map((element, index) => {
                 return (
                   <>

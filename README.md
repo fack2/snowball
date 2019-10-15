@@ -1,5 +1,8 @@
 # the-crowd
 
+## Heroku Link :
+[The Crowd](https://the-crowd.herokuapp.com/) :earth_africa: :seedling: 
+
 ## Problem Statement :
 
     You can’t have system change without individual change” – Greta Thunberg
@@ -19,8 +22,6 @@
     The app tells the user all the ways they can take climate action, on a simple, easy to navigate interface. The user can swipe to make a commitment to take that action (ie. ‘buy locally produced, seasonal food wherever possible’). They can then track the commitments they’ve made and the impact that they’ve had.
     Most importantly the app will show the user how many people, around the world, have already committed to each action
 
-## Heroku Link :
-[The Crowd](https://the-crowd.herokuapp.com/) :earth_africa: :seedling: 
 
 ## Instructions :
 

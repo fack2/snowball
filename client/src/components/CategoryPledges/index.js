@@ -9,7 +9,7 @@ class CategoryPledges extends React.Component {
   };
 
   componentDidMount() {
-    const category_id = 2; //this should change to take id from props
+    const category_id = 1; //this should change to take id from props
     axios.get(`/api/action-category/${category_id}`).then(Response => {
       const pledge_info = Response.data
       this.setState({ loading: false, pledge_info })

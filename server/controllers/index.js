@@ -2,9 +2,9 @@
 const express = require('express')
 const router = express.Router()
 const { getCategoryPledges } = require('./getCategoryPledges')
-const { getPledgeInfo } = require('./getPledgeInfo')
+const { getPledgePageInfo } = require('./getPledgePageInfo')
 
 router.get('/api/action-category/:categoryID', getCategoryPledges)
-router.get('/api/action-category/pledge/:pledgeID', getPledgeInfo)
+router.get('/api/action-category/pledge/:pledgeID', getPledgePageInfo)
 
 module.exports = router

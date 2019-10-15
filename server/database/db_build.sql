@@ -1,16 +1,15 @@
 BEGIN;
 
-DROP TABLE IF EXISTS "user", pledge, pledge_to_user,category, pledge_pros_cons, pledge_instructions, pledge_resources, pledge_references
+DROP TABLE IF EXISTS user, pledge, pledge_to_user,category, pledge_pros_cons, pledge_instructions, pledge_resources, pledge_references
     CASCADE;
 
-CREATE TABLE "user"
+CREATE TABLE user
 (
     user_id serial primary key ,
     first_name VARCHAR(100) ,
     last_name VARCHAR(100) ,
     email VARCHAR(50) UNIQUE,
     password VARCHAR(100) NOT NULL
-
 );
 
 CREATE TABLE category

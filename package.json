@@ -26,10 +26,12 @@
   "homepage": "https://github.com/fack2/the-crowd#readme",
   "dependencies": {
     "concurrently": "^4.1.2",
+    "env": "0.0.2",
     "env2": "^2.2.2",
     "express": "^4.17.1",
     "nodemon": "^1.19.3",
-    "pg": "^7.12.1"
+    "pg": "^7.12.1",
+    "psql": "0.0.1"
   },
   "devDependencies": {
     "eslint": "^6.5.1",

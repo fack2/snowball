@@ -1,11 +1,24 @@
 import React from "react"
-
+import axios from 'axios'
 class PledgePage extends React.Component {
+  componentDidMount() {
+    const { data } = this.props.location.state
+    const { pledge_id } = data;
+
+    axios.get(`/api/action-category/pledge/${pledge_id}`).then(Response => {
+      const pledge_info = Response.data
+      console.log("pledge_info", pledge_info)
+      //here should handle what we recieve from database which should change to rexieve sth i can read 
+    }).catch(err => { console.log("0000", err) });
+
+  }
+
   render() {
     const { data } = this.props.location.state
+
     return (<div>
-      <h1>helllo</h1>
-      {console.log("this.props.location.data", data)}
+      {/* should axios request to get pledge info by id */}
+      {/* {console.log("this.props.location.data", data)} */}
     </div>)
   }
 }

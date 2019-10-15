@@ -9,8 +9,8 @@ const App = () => (
   <Router>
     <React.Fragment>
       <Route exact path='/' component={LandingPage} />
-      <Route path='/dashboard/action-category/:category_id' component={CategoryPledges} />
-      <Route path='/dashboard/action-category/pledge/:action_name' component={PledgePage} />
+      <Route exact path='/dashboard/action-category/:category_id' component={CategoryPledges} />
+      <Route exact path='/dashboard/action-category/pledge/:pledge_title' component={PledgePage} />
     </React.Fragment>
   </Router>
 )

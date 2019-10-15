@@ -10,7 +10,7 @@ const App = () => (
     <React.Fragment>
       <Route exact path='/' component={LandingPage} />
       <Route exact path='/dashboard/action-category/:category_id' component={CategoryPledges} />
-      <Route exact path='/dashboard/action-category/pledge/:pledge_title' component={PledgePage} />
+      <Route exact path='/action-category/pledge/:pledge_title' component={PledgePage} />
     </React.Fragment>
   </Router>
 )

@@ -2,12 +2,10 @@ import React from "react"
 import axios from 'axios'
 class PledgePage extends React.Component {
   componentDidMount() {
-    const { data } = this.props.location.state
-    const { pledge_id } = data;
 
+    const { pledge_id } = this.props.location.state
     axios.get(`/api/action-category/pledge/${pledge_id}`).then(Response => {
-      const pledge_info = Response.data
-      console.log("pledge_info", pledge_info)
+      const pledge_id = Response.data
       //here should handle what we recieve from database which should change to rexieve sth i can read 
     }).catch(err => { console.log("0000", err) });
 

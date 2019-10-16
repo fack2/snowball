@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import UserPledges from '../UserPledges'
 import Footer from '../Footer'
-import axios from 'axios'
 import UserContext from '../../UserContext';
 import './style.css'
 
@@ -20,7 +19,6 @@ class HomePage extends Component {
   render() {
 
     const { userPledges } = this.state
-    console.log(userPledges);
 
     return (
       <React.Fragment>

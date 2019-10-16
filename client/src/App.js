@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import LandingPage from './components/LandingPage'
 import Home from './components/HomePage'
 import CategoryPledges from './components/CategoryPledges'
-import UserProvider from './UserContext'
+import { UserProvider } from './UserContext'
 import axios from 'axios';
 
 

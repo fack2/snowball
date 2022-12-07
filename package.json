@@ -25,10 +25,10 @@
   },
   "homepage": "https://github.com/fack2/the-crowd#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.20.1",
     "concurrently": "^4.1.2",
     "env2": "^2.2.2",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "nodemon": "^1.19.3",
     "pg": "^7.12.1"
   },
